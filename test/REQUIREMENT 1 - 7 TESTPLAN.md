@@ -26,7 +26,7 @@ The objective of the testing activities is to check functions and features of th
 ## HOW? - Test Stratergy
 ### Types of Testing
 - Functional 
- - System testing -Manual and Automation
+ - System testing -Manual
  - API testing - Manual with Postman
 
 ## Getting started

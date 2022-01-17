@@ -1,5 +1,4 @@
 ## Bug 1
-## Bug Description
 ### User can add an empty item on the todo list by adding spaces on the text box
 - GIVEN a user is on the todo list application
 - WHEN entering spaces in the text box using the spacebar AND clicking submit

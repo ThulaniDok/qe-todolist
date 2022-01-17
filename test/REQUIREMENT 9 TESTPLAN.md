@@ -8,9 +8,9 @@ Using the 5Ws and 1H method, we describe how the test plan will be used as guide
 
 ## Scope
 Scope of Todo List application
-9. The application backend should run in Kubernetes on a 3 node cluster with multiple replicas of each pod.
-  - Should be able to do rolling updates on the backend service without downtime
-  - Application should be self healing after network issues, node outages, node restarts and other issues
+- The application backend should run in Kubernetes on a 3 node cluster with multiple replicas of each pod.
+ - Should be able to do rolling updates on the backend service without downtime
+ - Application should be self healing after network issues, node outages, node restarts and other issues
 
 ## Test Stratergy
 ### Types of Testing

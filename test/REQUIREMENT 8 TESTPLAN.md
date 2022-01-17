@@ -8,7 +8,7 @@ Using the 5Ws and 1H method, we describe how the test plan will be used as guide
 
 ## WHAT? - Scope
 - Scope of Todo List application
-- 8. The application (frontend only) should be ported to Cordova and run as a mobile application.
+- The application (frontend only) should be ported to Cordova and run as a mobile application.
 
 ## WHY? - Objectives Of The Test Plan
 The objective of the testing activities is to check functions and features of the Todo List application against the requirements.

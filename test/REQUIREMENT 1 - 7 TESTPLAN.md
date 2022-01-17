@@ -1,4 +1,4 @@
-# Todo lis Test Plan
+# Todo List Requirements 1-7 Test Plan
 
 ## Introduction
 This document describes the methods and process that will be used 

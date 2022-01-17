@@ -1,11 +1,11 @@
 ## Bug 1 - User can add an empty item on the todo list by adding spaces on the text box
 - GIVEN a user is on the todo list application
-- WHEN entering spaces in the text box using the spacebar AND clicking submit
+- WHEN entering spaces in the textbox using the spacebar AND clicking submit
 - THEN an empty item todo list item is added
 
 ### Expected behavior
 The application should not allow a user to add an empty todo list item
-Spaces only should be consider invalid input
+Spaces only input should be consider invalid input
 
 ### Steps to reproduce
 1. Navigate to http://localhost/todo
@@ -19,22 +19,18 @@ Spaces only should be consider invalid input
 
 ## Bug 2 - User can add an empty item by hitting the endpoint directly
 - GIVEN a user is using postman to test the requests to the server
-- WHEN adding a todo list item by hitting the todo/add endpoint with an empty request parametre
+- WHEN adding a todo list item by hitting the todo/add endpoint without a request parametre
 - THEN an empty todo list item is added
 
 ### Expected behavior
 - The application should not allow a user to add an empty todo list item
-- Spaces only should be consider invalid input
 
 ### Steps to reproduce
-1. Navigate to http://localhost/todo
-2. Enter spaces by clicking spacebar in the textbox
-3. Click the submit button
-4. Observe an empty item is added to the todo list
+1. Execute a POST request to localhost/todo/add/ on Postman without request parametres 
+2. Observe response code is 200 OK 
+3. Navigate to the application frontend
+4. Observe an empty todo list item is added 
 
-### Link to screenshot
-- test\test_evidence\empty_item
-- test\test_evidence\empty_items
 
 ## Bug 3 - User can edit a todo list item with empty input value
 - GIVEN a todo list item exist

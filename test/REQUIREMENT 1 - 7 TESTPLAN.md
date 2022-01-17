@@ -36,6 +36,7 @@ Functional
 - Install Python Selenium package https://selenium-python.readthedocs.io/installation.html 
 - Install Robot Framework (https://github.com/robotframework/robotframework/blob/master/INSTALL.rst#using-pip)
 - Install RobotFramework-Selenium library (pip install robotframework-seleniumlibrary)
+- Install chromewebdriver and configure the Environment path verible 
 - Add Intellibot plugin
 
 ## Run API Tests with Postman

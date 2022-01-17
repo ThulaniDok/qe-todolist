@@ -86,6 +86,6 @@ The objective of the testing activities is to check functions and features of th
 - Product Owner
 
 ## WHERE? - Environment
-- Environemtn: http://localhost/8080
+- Environemtn: For node http://localhost/8080
 - Device: desktop or laptop
 - Browser: latest browsers

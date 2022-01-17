@@ -25,7 +25,7 @@ The objective of the testing activities is to check functions and features of th
 
 ## HOW? - Test Stratergy
 ### Types of Testing
-- Functional 
+Functional 
  - System testing -Manual
  - API testing - Manual with Postman
 
@@ -34,41 +34,41 @@ The objective of the testing activities is to check functions and features of th
 
 ## Run API Tests with Postman
 - Import the collection test\qe_todo_list.postman_collection.json into postman
-- Run the requests individually and observe the Test tab
+- Run the requests individually and observe the Test Results tab
 
 ## Execute Functional Manual Test Cases
-### Verify that appliation can be deployed in docker - Man 
+### Verify that appliation can be deployed in docker - Manual
   - GIVEN application is deployed in docker
   - WHEN navigating to the url http://localhost:8081
   - THEN the application should load without errors
 
-### Verify that multiple user can view the shared public todo list - Man
-  - GIVEN user A is viewing the application on 
+### Verify that multiple users can view the shared public todo list - Manual
+  - GIVEN user A is viewing the application
   - WHEN user B loads the application a different browser session
   - THEN both user should see the same todo list
 
-### Verify that the todo list is persisted after browser refresh - Man
+### Verify that the todo list is persisted after browser refresh - Manual
   - GIVEN a user is viewing the application AND a todo list is loaded
   - WHEN refreshing the browser
-  - THEN te list same list should be displayed after the browser has finished loading
+  - THEN the same list should be displayed after the browser has finished reloading
 
-### Verify that a todo list item cannot be empty - Man
+### Verify that a todo list item cannot be empty - Manual
   - GIVEN a user is on the application 
-  - WHEN adding or updating a todo list item with an empety value in the input field 
-  - THEN the item should not be added
+  - WHEN adding or editing a todo list item with an empety value in the input field 
+  - THEN the item should not be added or updated
 
-### Verify that a user can add a todo list item - Man/Auto
+### Verify that a user can add a todo list item - Manual
   - GIVEN a user is on the application
   - WHEN adding a todo list item with a valid input
   - THEN the list should be added
 
-### Verify that a user can edit a todo list item - Man/Auto
+### Verify that a user can edit a todo list item - Manual
   - GIVEN a user is on the application 
   - AND a todo list item exist
   - WHEN editing a todo list item with a valid input
   - THEN the list should be updated with the new value
 
-### Verify that a user can delete a todo list item - Man/Auto
+### Verify that a user can delete a todo list item - Manual
   - GIVEN a user is on the application 
   - AND a todo list item exist
   - WHEN deleting a todo list item

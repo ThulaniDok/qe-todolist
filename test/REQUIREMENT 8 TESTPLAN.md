@@ -7,8 +7,8 @@ to carry out the testing for the Todo List Web Application front end as a mobile
 Using the 5Ws and 1H method, we describe how the test plan will be used as guide.
 
 ## WHAT? - Scope
-Scope of Todo List application
-8. The application (frontend only) should be ported to Cordova and run as a mobile application.
+- Scope of Todo List application
+- 8. The application (frontend only) should be ported to Cordova and run as a mobile application.
 
 ## WHY? - Objectives Of The Test Plan
 The objective of the testing activities is to check functions and features of the Todo List application against the requirements.
@@ -18,7 +18,6 @@ The objective of the testing activities is to check functions and features of th
  - System testing 
  - Mobile device / browser compatibility
  - Usability testing
- - Fault tolerance
 
 ### Tools required
 - Real mobile devices with different operating systems
@@ -32,12 +31,12 @@ The objective of the testing activities is to check functions and features of th
 
 ### Verify that application loads and runs properly on a mobile device
   - GIVEN a user has a mobile device
-  - WHEN navigating to the url http://localhost:8081
+  - WHEN navigating to the url http://localhost/todo
   - THEN the application should load without and behave as expected
 
 ### Verify that multiple devices can view the share todo list
   - GIVEN user A is viewing the application on a mobile device 
-  - WHEN user B loads the application a different mobile device
+  - WHEN user B loads the application on a different mobile device
   - THEN both user should see the same todo list
 
 ### Verify application behaves as expected in 3G connection
@@ -58,7 +57,7 @@ The objective of the testing activities is to check functions and features of th
 ### Verify how application behaves when javascript is turned off on the browser
   - GIVEN a user is on a browser with javascript turned off
   - WHEN navigatin the application 
-  - THEN approprite message should be displayed
+  - THEN approprite error message should be displayed
 
 ## WHEN? - Entry Criteria
 - Applciation is deployed to test environment

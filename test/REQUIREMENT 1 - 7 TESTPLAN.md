@@ -31,13 +31,28 @@ Functional
 
 ## Getting started
 - Install Postman (https://www.postman.com/downloads/)
+- Install Python (https://www.python.org/downloads/)
+- Install Python IDE PyCharm (https://www.jetbrains.com/help/pycharm/installation-guide.html#toolbox)
+- Install Python Selenium package https://selenium-python.readthedocs.io/installation.html 
+- Install Robot Framework (https://github.com/robotframework/robotframework/blob/master/INSTALL.rst#using-pip)
+- Install RobotFramework-Selenium library (pip install robotframework-seleniumlibrary)
+- Add Intellibot plugin
 
 ## Run API Tests with Postman
 - Import the collection test\qe_todo_list.postman_collection.json into postman
 - Run the requests individually and observe the Test Results tab
 
+## Execute Automation tests
+- Open test\QE_todolist_automation project in PyCharm
+- Add `Python 3.6` as project interpreter
+- Add `Selenium` package in project 
+- Add `Robotframework` package in project
+- Add `Robotframework-seleniumlibrary` package in project
+- Add `Robotframework-pythonlibcore` package in project
+- Run test in PyCharm in terminal `robot  test_cases`
+
 ## Execute Functional Manual Test Cases
-### Verify that appliation can be deployed in docker - Manual
+### Verify that appliation can be deployed in docker - Manual & Automation
   - GIVEN application is deployed in docker
   - WHEN navigating to the url http://localhost:8081
   - THEN the application should load without errors
@@ -57,18 +72,18 @@ Functional
   - WHEN adding or editing a todo list item with an empety value in the input field 
   - THEN the item should not be added or updated
 
-### Verify that a user can add a todo list item - Manual
+### Verify that a user can add a todo list item - Manual & Automation
   - GIVEN a user is on the application
   - WHEN adding a todo list item with a valid input
   - THEN the list should be added
 
-### Verify that a user can edit a todo list item - Manual
+### Verify that a user can edit a todo list item - Manual & Automation
   - GIVEN a user is on the application 
   - AND a todo list item exist
   - WHEN editing a todo list item with a valid input
   - THEN the list should be updated with the new value
 
-### Verify that a user can delete a todo list item - Manual
+### Verify that a user can delete a todo list item - Manual & Automation
   - GIVEN a user is on the application 
   - AND a todo list item exist
   - WHEN deleting a todo list item
